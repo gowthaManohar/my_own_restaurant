@@ -1,0 +1,28 @@
+
+
+GET http://localhost:3000/owner/2
+###
+
+POST http://localhost:3000/restaurant/
+Content-Type: application/json 
+
+
+{"location":"hyderabad","couponCode":"HUNGRY25"}
+
+### 
+
+
+GET http://localhost:3000/restaurant/search/?location=hyderabad&couponCode=HUNGRY50
+
+###
+
+GET http://localhost:3000/orderitems/5/
+
+### 
+POST http://localhost:3000/owner/
+Content-Type: application/json 
+
+{
+    "name":"surender",
+    "email":"surender@gmail.com"
+}
